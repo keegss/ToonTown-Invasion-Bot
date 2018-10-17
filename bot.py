@@ -12,13 +12,13 @@ def update_forever(sc, tweet, currentInvasions):
     for district, data in invasions.items():
 
         if district not in currentInvasions:
-            print('%ss have taken over ToonTown (%s)!' % (data['type'], district))
+            tweet.update_status('%ss have taken over ToonTown (%s)!' % (data['type'], district))
             currentInvasions[district] = data
 
     # post when an invasions ends
     for district, data in list(currentInvasions.items()):
         if district not in invasions:
-            print('The %s invasion has ended! (%s)' % (data['type'], district))
+            tweet.update_status('The %s invasion has ended! (%s)' % (data['type'], district))
             del(currentInvasions[district])
 
     sc.enter(30, 1, update_forever, (sc, tweet, currentInvasions))
