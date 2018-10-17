@@ -1,6 +1,6 @@
 <h3>ToonTown Rewritten Twitter Bot</h3>
 
-The hardest part about this project is making a Twitter.
+The hardest part about this project was making a Twitter.
 
 To run this program, you must first create a Twitter, apply for a developer account, wait a week for them to accept your application, then create a project with that account. Then on the project details screen, go to the Keys and tokens tab. Now, create a file called secrets.py and place it in this same directory as bot.py. Within that file you must provide the following fields:
 
