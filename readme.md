@@ -1,4 +1,4 @@
-<h3>ToonTown Rewritten Twitter Bot<h3>
+<h3>ToonTown Rewritten Twitter Bot</h3>
 
 The hardest part about this project is making a Twitter.
 
