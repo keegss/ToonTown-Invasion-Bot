@@ -3,7 +3,6 @@ import tweepy
 import sched
 
 from api import *
-from secret import *
 
 def update_forever(sc, tweet, currentInvasions):
 
