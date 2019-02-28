@@ -8,7 +8,7 @@ class ttApi:
         ttApi.url = 'https://www.toontownrewritten.com/api/'
         ttApi.headers = {
             'User-Agent': 'ToonTown Invasion Twitter Bot',
-            'From': 'yourgithuburl@here'
+            'From': 'https://github.com/keegss'
         }
 
     def get_invasions(self):

@@ -1,3 +1,4 @@
+import os
 import tweepy
 import sched
 
@@ -26,8 +27,8 @@ def update_forever(sc, tweet, currentInvasions):
 def setup():
 
     # setup tweep
-    auth = tweepy.OAuthHandler(C_KEY, C_SECRET)
-    auth.set_access_token(A_TOKEN, A_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(os.environ.get('C_KEY'), os.environ.get('C_SECRET'))
+    auth.set_access_token(os.environ.get('A_TOKEN'), os.environ.get('A_TOKEN_SECRET'))
     tweet = tweepy.API(auth)
 
     # assume no current invasions
