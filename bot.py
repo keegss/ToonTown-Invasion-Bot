@@ -10,7 +10,6 @@ def update_forever(sc, tweet, currentInvasions):
 
     # post when an invasion begins
     for district, data in invasions.items():
-
         if district not in currentInvasions:
             tweet.update_status('%ss have taken over ToonTown (%s)!' % (data['type'], district))
             currentInvasions[district] = data
